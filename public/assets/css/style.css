@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*=============================================*/
+/*                   VARIABLES                 */
+/*=============================================*/
+
+:root {
+	--body-alt-color: #e0d1ed;
+	--title-alt-color: #f0b9cf;
+	--bg-primary-color: #e63c80;
+	--bg-secondary-color: #c70452;
+	--title-color: #4b004c;
+	--body-color: #fff;
+	--text-color: #222;
+
+	--title-font-family: 'Oswald', serif;
+	--general-font-family: 'Roboto', serif;
+
+	--regular-font: 400;
+	--medium-font: 500;
+	--semi-bold-font: 600;
+
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--h3-font-size: 1rem;
+
+	--normal-font-size: 0.938rem;
+	--small-font-size: 0.813rem;
+}
+
+/*=============================================*/
+/*                     BASE                    */
+/*=============================================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--general-font-family);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: var(--body-color);
+	color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--title-font-family);
+	color: var(--title-color);
+	font-weight: var(--semi-bold-font);
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+}
+
+h2 {
+	font-size: var(--h2-font-size);
+}
+
+h3 {
+	font-size: var(--h3-font-size);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+input,
+select,
+textarea,
+button {
+	outline: none;
+	background-color: transparent;
+	border: none;
+}
+
+button,
+select {
+	cursor: pointer;
+}
+
+a,
+button {
+	transition: 0.4s ease-in-out;
+}
