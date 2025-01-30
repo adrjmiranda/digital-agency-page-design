@@ -1,0 +1,21 @@
+{
+	"name": "digital-agency-page-design",
+	"version": "1.0.0",
+	"description": "This repository contains the layout of a website page for a **digital agency**. The design is created using HTML, CSS, and JavaScript. The objective of this project is to develop a visually attractive and functional page, representing the services and identity of a **digital agency**.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/adrjmiranda/digital-agency-page-design.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/adrjmiranda/digital-agency-page-design/issues"
+	},
+	"homepage": "https://github.com/adrjmiranda/digital-agency-page-design#readme"
+}
