@@ -6,10 +6,12 @@ This repository contains the layout of a website page for a **digital agency**. 
 
 - **index.html**: The main page of the site.
 - **src/**: Contains the project source files.
-- **assets/**: Static resources.
-  - **styles/**: CSS/SASS files for styling.
-  - **img/**: Images and icons.
-  - **js/**: Compiled TypeScript files.
+- **public/**: Folder with files that go to production.
+  - **assets/**: Static resources.
+    - **styles/**: CSS/SASS files for styling.
+    - **img/**: Images and icons.
+    - **js/**: Compiled TypeScript files.
+  - **index.html**: The main page of the site.
 - **tsconfig.json**: TypeScript configuration.
 - **package.json**: Project dependencies and build scripts.
 - **.gitignore**: Files ignored by Git.
