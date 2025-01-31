@@ -46,6 +46,7 @@ html {
 body {
 	background-color: var(--body-color);
 	color: var(--text-color);
+	overflow-x: hidden;
 }
 
 h1,
@@ -74,6 +75,12 @@ a {
 
 ul {
 	list-style: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 input,
