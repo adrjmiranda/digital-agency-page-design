@@ -153,6 +153,37 @@ button {
 	bottom: 0;
 }
 
+.section-title {
+	text-align: center;
+	font-size: 1.85rem;
+	font-weight: var(--medium-font);
+	text-transform: capitalize;
+	position: relative;
+	width: fit-content;
+	margin: 0 auto;
+	margin-bottom: 5.5rem;
+	margin-top: 3rem;
+}
+
+.section-title::before,
+.section-title::after {
+	position: absolute;
+	content: '';
+	width: 100%;
+	margin-top: 0.35rem;
+	height: 3px;
+	background-color: var(--bg-primary-color);
+	display: block;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	border-radius: 0.25rem;
+}
+
+.section-title::before {
+	bottom: -0.85rem;
+	background-color: var(--bg-secondary-color);
+}
+
 /*=============================================*/
 /*                NAVBAR Elment                */
 /*=============================================*/
@@ -270,6 +301,54 @@ button {
 /*=============================================*/
 /*              ABOUT Section                  */
 /*=============================================*/
+
+.about-items {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 2.25rem;
+	grid-template-rows: repeat(2, 1fr);
+	row-gap: 2.5rem;
+}
+
+.about-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.25rem;
+	box-shadow: 2px 3px 25px 5px rgba(199, 4, 82, 0.08);
+	border-radius: 0.25rem;
+	padding: 2rem 1.25rem;
+	text-align: center;
+	transition: 0.5s ease-in-out;
+	cursor: grab;
+}
+
+.about-item-icon i {
+	transition: 0.3s ease-in-out;
+	box-shadow: 2px 3px 25px 5px rgba(199, 4, 82, 0.08);
+	border-radius: 50%;
+	font-size: 2.5rem;
+	color: var(--bg-secondary-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.85rem;
+}
+
+.about-item:hover {
+	transform: scale(1.055);
+	box-shadow: 2px 3px 25px 5px rgba(199, 4, 82, 0.15);
+}
+
+.about-item:hover .about-item-icon i {
+	transform: scale(1.085);
+	background-color: var(--bg-secondary-color);
+	color: var(--body-color);
+}
+
+.about-item-title {
+	font-size: var(--h2-font-size);
+}
 
 /*=======     End of ABOUT Section      =======*/
 
