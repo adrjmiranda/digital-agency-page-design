@@ -630,13 +630,24 @@ button {
 }
 
 .footer-contact-field input,
-.footer-contact-field textarea {
+.footer-contact-field textarea,
+.footer-contact-field input::placeholder,
+.footer-contact-field textarea::placeholder {
 	font-size: var(--normal-font-size);
-	color: var(--body-alt-color);
 	font-weight: var(--regular-font);
 	border: 1px solid var(--title-alt-color);
 	padding: 0.25rem 0.5rem;
 	border-radius: 0.25rem;
+}
+
+.footer-contact-field input,
+.footer-contact-field textarea {
+	color: var(--body-alt-color);
+}
+
+.footer-contact-field input::placeholder,
+.footer-contact-field textarea::placeholder {
+	color: var(--title-alt-color);
 }
 
 .footer-contact-btn {
@@ -656,3 +667,29 @@ button {
 }
 
 /*=======      End of FOOTER Elment     =======*/
+
+/*=============================================*/
+/*                   CREDITS AREA              */
+/*=============================================*/
+
+#credit {
+	background-color: var(--text-color);
+	padding-block: 1rem;
+}
+
+.credit-content {
+	width: 100%;
+	text-align: center;
+	color: var(--body-alt-color);
+	font-size: var(--small-font-size);
+}
+
+.credit-content span,
+.credit-content a {
+	color: var(--body-color);
+	font-weight: var(--regular-font);
+}
+
+.credit-content a {
+	color: var(--title-alt-color);
+}
