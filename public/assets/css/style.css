@@ -487,6 +487,51 @@ button {
 /*          SOCIAL MEDIA Section               */
 /*=============================================*/
 
+#social-media .inner {
+	width: 100%;
+}
+
+.social-media-items {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.85rem;
+}
+
+.social-media-item {
+	height: 40px;
+	width: 40px;
+	background-color: var(--bg-secondary-color);
+	border-radius: 0.25rem;
+	overflow: visible;
+	transition: 0.3s ease-in-out;
+}
+
+.social-media-item a {
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	transition: 0.3s ease-in-out;
+}
+
+.social-media-item i {
+	color: var(--body-alt-color);
+	font-size: var(--normal-font-size);
+	font-weight: bold;
+	pointer-events: none;
+	transition: 0.4s ease-in-out;
+}
+
+.social-media-item:hover {
+	transform: scale(1.13);
+}
+
+.social-media-item a:hover i {
+	color: var(--body-color);
+}
+
 /*=======  End of SOCIAL MEDIA Section  =======*/
 
 /*=============================================*/
