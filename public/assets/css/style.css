@@ -112,6 +112,9 @@ button {
 	padding: 0 0.75rem;
 	margin: 0 auto;
 	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .logo {
@@ -121,6 +124,7 @@ button {
 
 .logo span,
 .logo span b {
+	padding-top: 0.5rem;
 	font-family: var(--title-font-family);
 	font-weight: var(--semi-bold-font);
 	color: var(--title-color);
@@ -129,6 +133,24 @@ button {
 .logo img {
 	width: 40px;
 	margin-right: 0.5rem;
+}
+
+.btn {
+	border-radius: 0.25rem;
+	padding: 0.75rem 1.25rem;
+	transition: 0.45s ease-in;
+	color: var(--body-color);
+}
+
+.wave {
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+}
+
+.wave.bottom {
+	left: 0;
+	bottom: 0;
 }
 
 /*=============================================*/
@@ -144,13 +166,25 @@ button {
 	background-color: var(--body-color);
 	display: flex;
 	align-items: center;
+	z-index: 30;
 	box-shadow: 0 2px 25px 20px rgba(0, 0, 0, 0.025);
+}
+
+#navbar.static {
+	background-color: transparent;
+	box-shadow: unset;
+}
+
+#navbar.static .logo span,
+#navbar.static .logo span b {
+	color: var(--body-alt-color);
 }
 
 #navbar .inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex: 1;
 }
 
 .navbar-menu {
@@ -170,11 +204,66 @@ button {
 	color: var(--bg-secondary-color);
 }
 
+.navbar-menu.static li a {
+	color: var(--body-color);
+}
+.navbar-menu.static li a:hover {
+	color: var(--title-alt-color);
+}
+
 /*=======      End of NAVBAR Elment     =======*/
 
 /*=============================================*/
 /*             HEADER Section                  */
 /*=============================================*/
+
+#header {
+	height: 100vh;
+	background-image: linear-gradient(
+		27deg,
+		var(--bg-primary-color),
+		var(--title-color) 150%
+	);
+	position: relative;
+}
+
+#header .inner {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: repeat(1, 1fr);
+	column-gap: 2rem;
+	align-items: center;
+	height: 100%;
+	flex: 1;
+}
+
+.header-left {
+	display: flex;
+	flex-direction: column;
+	gap: 1.35rem;
+}
+
+.header-title,
+.header-title span {
+	font-size: 2.5rem;
+	font-family: var(--title-font-family);
+}
+
+.header-subtitle {
+	font-size: var(--h2-font-size);
+	font-weight: var(--medium-font);
+	color: var(--title-alt-color);
+}
+
+.header-btn {
+	background-color: var(--title-color);
+	width: fit-content;
+	color: var(--body-alt-color);
+}
+
+.header-btn:hover {
+	background-color: var(--text-color);
+}
 
 /*=======    End of HEADER Section      =======*/
 
