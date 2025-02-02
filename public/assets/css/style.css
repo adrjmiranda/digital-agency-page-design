@@ -153,35 +153,18 @@ button {
 	bottom: 0;
 }
 
+.section {
+	padding-block: 3.5rem;
+}
+
 .section-title {
 	text-align: center;
 	font-size: 1.85rem;
 	font-weight: var(--medium-font);
 	text-transform: capitalize;
-	position: relative;
 	width: fit-content;
 	margin: 0 auto;
 	margin-bottom: 5.5rem;
-	margin-top: 3rem;
-}
-
-.section-title::before,
-.section-title::after {
-	position: absolute;
-	content: '';
-	width: 100%;
-	margin-top: 0.35rem;
-	height: 3px;
-	background-color: var(--bg-primary-color);
-	display: block;
-	transform: translate(-50%, -50%);
-	left: 50%;
-	border-radius: 0.25rem;
-}
-
-.section-title::before {
-	bottom: -0.85rem;
-	background-color: var(--bg-secondary-color);
 }
 
 /*=============================================*/
@@ -302,11 +285,14 @@ button {
 /*              ABOUT Section                  */
 /*=============================================*/
 
+#about {
+	padding-bottom: 5.5rem;
+}
+
 .about-items {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	column-gap: 2.25rem;
-	grid-template-rows: repeat(2, 1fr);
 	row-gap: 2.5rem;
 }
 
@@ -355,6 +341,67 @@ button {
 /*=============================================*/
 /*             BENEFITS Section                */
 /*=============================================*/
+
+.benefits-content {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	column-gap: 1.5rem;
+}
+
+.benefits-left {
+	background-color: var(--body-color);
+	padding: 1.85rem 1.5rem;
+	border-radius: 0.25rem;
+	box-shadow: 2px 3px 30px 20px rgba(199, 4, 82, 0.035);
+	translate: 0.35s ease-in-out;
+}
+
+.benefits-left:hover {
+	transform: scale(1.011);
+}
+
+.benefits-left-title {
+	font-size: var(--h2-font-size);
+	margin-bottom: 2.5rem;
+	text-transform: uppercase;
+}
+
+.benefits-items {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.benefits-item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	box-shadow: 2px 3px 30px 20px rgba(0, 0, 0, 0.015);
+	padding: 0.75rem;
+	border-radius: 0.25rem;
+	cursor: grab;
+	transition: 0.35s ease-in-out;
+}
+
+.benefits-item:hover {
+	box-shadow: 2px 3px 30px 20px rgba(0, 0, 0, 0.055);
+	transform: scale(1.055);
+	background-color: var(--title-alt-color);
+}
+
+.benefits-item h4 {
+	color: var(--bg-secondary-color);
+	font-weight: var(--semi-bold-font);
+	font-size: var(--h3-font-size);
+	text-transform: uppercase;
+}
+
+.benefits-item p {
+	font-weight: var(--regular-font);
+	color: var(--title-color);
+	font-size: var(--h3-font-size);
+}
 
 /*=======    End of BENEFITS Section    =======*/
 
