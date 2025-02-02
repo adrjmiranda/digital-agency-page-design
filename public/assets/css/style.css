@@ -24,8 +24,10 @@
 	--h2-font-size: 1.25rem;
 	--h3-font-size: 1rem;
 
-	--normal-font-size: 0.938rem;
+	--normal-font-size: 0.978rem;
 	--small-font-size: 0.813rem;
+
+	--container-max-width: 1280px;
 }
 
 /*=============================================*/
@@ -108,7 +110,7 @@ button {
 /*=============================================*/
 
 .wrapper-container {
-	max-width: 1280px;
+	max-width: var(--container-max-width);
 	padding: 0 0.75rem;
 	margin: 0 auto;
 	width: 100%;
@@ -408,6 +410,76 @@ button {
 /*=============================================*/
 /*          TESTIMONIALS Section               */
 /*=============================================*/
+
+#testimonials .inner {
+	width: 100%;
+}
+
+.testimonials-items {
+	display: flex;
+	align-items: center;
+	gap: 1.35rem;
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: visible;
+	padding-block: 3rem;
+}
+
+.testimonials-item {
+	background-color: var(--body-color);
+	min-width: calc(var(--container-max-width) / 4 - 1.35rem);
+	padding: 0.85rem 1.25rem;
+	border-left: 4px solid var(--bg-secondary-color);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	filter: drop-shadow(0 1px 15px rgba(75, 0, 76, 0.08));
+	border-radius: 0.25rem;
+}
+
+.testimonial-text {
+	font-weight: var(--regular-font);
+	color: rgba(34, 34, 34, 0.75);
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-size: var(--normal-font-size);
+}
+
+.testimonial-user {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.testimonial-user-photo {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	border: 4px solid var(--bg-primary-color);
+	object-fit: cover;
+}
+
+.testimonial-user-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.testimonial-user-name,
+.testimonial-user-position {
+	font-size: var(--small-font-size);
+}
+
+.testimonial-user-name {
+	font-weight: var(--semi-bold-font);
+	color: var(--title-color);
+	font-size: var(--normal-font-size);
+}
+
+.testimonial-user-position {
+	color: rgba(34, 34, 34, 0.62);
+}
 
 /*=======  End of TESTIMONIALS Section  =======*/
 
