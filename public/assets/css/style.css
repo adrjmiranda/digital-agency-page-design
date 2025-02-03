@@ -193,7 +193,8 @@ button {
 	display: flex;
 	align-items: center;
 	z-index: 30;
-	box-shadow: 0 2px 25px 20px rgba(0, 0, 0, 0.025);
+	box-shadow: 0 2px 25px 20px rgba(0, 0, 0, 0.045);
+	transition: 0.3s ease-in-out;
 }
 
 #navbar.static {
@@ -554,7 +555,7 @@ button {
 #footer {
 	position: relative;
 	background-image: var(--bg-lg);
-	padding-top: 219px;
+	padding-top: 258px;
 	padding-bottom: 74px;
 }
 
