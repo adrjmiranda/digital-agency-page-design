@@ -2,6 +2,7 @@
  * Navbar
  * navigation bar color toggle
  */
+
 const navbar = document.querySelector('#navbar') as HTMLDivElement;
 const navbarMenu = document.querySelector('.navbar-menu') as HTMLUListElement;
 
