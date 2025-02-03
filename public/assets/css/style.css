@@ -864,3 +864,13 @@ button {
 		grid-template-columns: 100%;
 	}
 }
+
+@media screen and (max-width: 576px) {
+	/*=============================================*/
+	/*                   ABOUT                     */
+	/*=============================================*/
+
+	.about-items {
+		grid-template-columns: repeat(1, 100%);
+	}
+}
