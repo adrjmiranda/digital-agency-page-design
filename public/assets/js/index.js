@@ -34,3 +34,15 @@ closeMenu === null || closeMenu === void 0 ? void 0 : closeMenu.addEventListener
     navbarMenu === null || navbarMenu === void 0 ? void 0 : navbarMenu.classList.toggle('show');
     showShowButtonAndHideHideButton();
 });
+const slideWrapper = document.querySelector('.slide-wrapper');
+const executionTime = 5000;
+setInterval(() => {
+    let slides = document.querySelectorAll('.slide');
+    slideWrapper === null || slideWrapper === void 0 ? void 0 : slideWrapper.classList.remove('animate');
+    void (slideWrapper === null || slideWrapper === void 0 ? void 0 : slideWrapper.offsetWidth);
+    slideWrapper === null || slideWrapper === void 0 ? void 0 : slideWrapper.classList.add('animate');
+    if (slides.length !== 0) {
+        const firstElement = slides[0];
+        slideWrapper.appendChild(firstElement);
+    }
+}, executionTime);

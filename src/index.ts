@@ -51,3 +51,27 @@ closeMenu?.addEventListener('click', () => {
 	navbarMenu?.classList.toggle('show');
 	showShowButtonAndHideHideButton();
 });
+
+/**
+ * Slider
+ * Animation: testimonial cards slide animation
+ */
+
+const slideWrapper = document.querySelector('.slide-wrapper') as HTMLDivElement;
+
+const executionTime = 5000;
+
+setInterval(() => {
+	let slides = document.querySelectorAll(
+		'.slide'
+	) as NodeListOf<HTMLDivElement>;
+
+	slideWrapper?.classList.remove('animate');
+	void slideWrapper?.offsetWidth;
+	slideWrapper?.classList.add('animate');
+
+	if (slides.length !== 0) {
+		const firstElement = slides[0];
+		slideWrapper.appendChild(firstElement);
+	}
+}, executionTime);

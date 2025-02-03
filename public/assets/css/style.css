@@ -187,6 +187,25 @@ button {
 	display: flex !important;
 }
 
+.slide-wrapper,
+.slide {
+	transition: transform 1.5s ease-in-out;
+}
+
+.slide-wrapper.animate {
+	animation: 1.5s ease-in-out 0s 1 normal forwards paused slider;
+}
+
+@keyframes slider {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-calc(var(--container-max-width) / 4 - 1.35rem));
+	}
+}
+
 /*=============================================*/
 /*                NAVBAR Elment                */
 /*=============================================*/
