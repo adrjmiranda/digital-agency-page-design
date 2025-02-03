@@ -867,6 +867,32 @@ button {
 
 @media screen and (max-width: 576px) {
 	/*=============================================*/
+	/*                   NAVBAR                    */
+	/*=============================================*/
+
+	#navbar,
+	.navbar-menu {
+		background-color: white !important;
+	}
+
+	#navbar .logo span,
+	#navbar .logo span b {
+		color: var(--title-color) !important;
+	}
+
+	.navbar-menu a {
+		color: var(--bg-secondary-color) !important;
+	}
+
+	/*=============================================*/
+	/*                   HEADER                    */
+	/*=============================================*/
+
+	.header-right img {
+		height: auto;
+	}
+
+	/*=============================================*/
 	/*                   ABOUT                     */
 	/*=============================================*/
 
