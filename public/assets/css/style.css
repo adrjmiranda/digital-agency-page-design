@@ -693,13 +693,13 @@ button {
 .footer-contact-field textarea::placeholder {
 	font-size: var(--normal-font-size);
 	font-weight: var(--regular-font);
-	border: 1px solid var(--title-alt-color);
-	padding: 0.25rem 0.5rem;
-	border-radius: 0.25rem;
 }
 
 .footer-contact-field input,
 .footer-contact-field textarea {
+	border-radius: 0.25rem;
+	padding: 0.25rem 0.5rem;
+	border: 1px solid var(--title-alt-color);
 	color: var(--body-alt-color);
 }
 
