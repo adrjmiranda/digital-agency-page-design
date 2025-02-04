@@ -53,7 +53,3 @@ Feel free to open issues and submit pull requests. If you want to contribute imp
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-### Deploy Status
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/45355fa5-535e-4a0e-a5a5-868f19598a4c/deploy-status)](https://app.netlify.com/sites/digital-agency-page-design/deploys)
